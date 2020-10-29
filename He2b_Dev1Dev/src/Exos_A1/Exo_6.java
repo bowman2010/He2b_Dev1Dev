@@ -18,6 +18,8 @@ public class Exo_6 {
         double htva  = Utils.askForDouble("Prix HTVA : ");
         double tva = htva*21/100;
         double ttc = htva + tva;
+        
+        
         System.out.println ("Prix     = "+htva);
         System.out.println ("TVA      = "+tva);
         System.out.println ("Prix TTC = "+ttc);
