@@ -15,14 +15,20 @@ public class Exo_6 {
     
     
     public static void main(String[] args) {
+
         double htva  = Utils.askForDouble("Prix HTVA : ");
-        double tva = htva*21/100;
-        double ttc = htva + tva;
+        double tva   = Utils.askForDouble("      TVA ;  ");
+
         
-        
-        System.out.println ("Prix     = "+htva);
-        System.out.println ("TVA      = "+tva);
-        System.out.println ("Prix TTC = "+ttc);
+        var htvastr =  Utils.dotAligned( 7, 2, htva);
+        String tvastr  =  Utils.dotAligned( 7, 2, tva);
+        String ttcstr  =  Utils.dotAligned( 7, 2, fve);
+          
+        System.out.println ("Prix HTVA = "+ htvastr);
+        System.out.println ("TVA       = "+ tvastr);
+        System.out.println ("Prix TTC  = "+ ttcstr);                                 
+
+                
         
     }
     
