@@ -8,7 +8,8 @@ package Exos_A1;
 import FvpLib.Utils;
 
 /**
- *
+ * Surface d’un triangle
+ * Calculer la surface d’un triangle connaissant sa base et sa hauteur.
  * @author bowman
  */
 public class Exo3 {

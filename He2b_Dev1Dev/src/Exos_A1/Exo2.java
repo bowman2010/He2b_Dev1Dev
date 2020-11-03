@@ -8,7 +8,8 @@ package Exos_A1;
 import FvpLib.Utils;
 
 /**
- *
+ * Moyenne de 2 nombres
+ * Calculer la moyenne de deux nombres donnés.
  * @author bowman
  */
 public class Exo2 {
@@ -18,6 +19,4 @@ public class Exo2 {
         double b = Utils.askForDouble("Entrez nombre b : ");
         Utils.println("Moyenne = "+(a+b)/2);
     }
-    
-   
 }

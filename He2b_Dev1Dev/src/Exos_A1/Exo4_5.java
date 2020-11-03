@@ -11,7 +11,7 @@ import FvpLib.Utils;
  *
  * @author bowman
  */
-public class Exo_4_5 {
+public class Exo4_5 {
     
     public static void main(String[] args) {
         Utils.println("Surface et perimetre d'un cercle");

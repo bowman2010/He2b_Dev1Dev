@@ -67,9 +67,7 @@ public class Calendrier {
     
     public static boolean estBisextile(int annee) {
         if (annee%400 == 0) return true;
-        if ( (annee%4 == 0) && (annee%100 != 0) ) return true;
-        
-        return false;
+        return ( (annee%4 == 0) && (annee%100 != 0) );
     }
     
     public static int nombreJours(int mois, int annee) {
@@ -99,29 +97,29 @@ public class Calendrier {
         return h;
     }
     
-    public static boolean valid_year(int year) {
-        return ( (0<=year) && (year<3OOO ) );
-    }
-
     public static boolean valid_month (int month) {
-        return ((month<=1)v&&v(monh< 31))
+        return ((month>=1) && (month<=12));
     }
 
+    
+    
     public static void main(String[] args) {
         boolean valid=false;
-        boolean year,
-        do {
-            int year  = Utils.askForInt("Annee  : ");
-            int month = Utils.askForInt("Month  : ")
-                    + ");
-            if   (valid_month(0)) &&  (valid_year(0)) 
-                    {
-                    afficherTitre(12, 2021);
-                    afficheerEntete();
+        int year;
+        int month;
+
+        while (valid==false) {
+            year  = Utils.askForInt("Annee  : ");
+            month = Utils.askForInt("Month  : ");
+                
+            if   (valid_month(month)){
+                    afficherTitre(month, year);
+                    afficherEntete();
                     afficherMois(1, 28);
-                    }
-                    else valid=false;
-        } while (valid==false);
-    }
+                }
+            }
+        } 
+    
+    
 }
 

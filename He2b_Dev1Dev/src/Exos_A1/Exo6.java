@@ -7,7 +7,7 @@ import FvpLib.Utils;
  *
  * @author bowman
  */
-public class Exo_6 {
+public class Exo6 {
     
     
     public static void main(String[] args) {
